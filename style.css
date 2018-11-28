@@ -58,7 +58,7 @@ p {
 
 @media screen and (max-width:980px) {
   body {
-    width: 850px;
+    width: 100%;
   }
   .wrapper{
     overflow: hidden;
@@ -68,35 +68,38 @@ p {
   nav,
   section,
   aside,
-  article {
+  article,
+  footer {
     float: none;
   }
 
   section,
-  aside{
-    width:100%;
+  aside,
+  header,
+  footer,
+  nav{
     clear:both;
+    width:90%;
   }
 
-  h1,
+  /* h1,
   h2,
   h3,
   p,
   article {
     margin: 0;
     padding: 0;
-  }
+  } */
 }
 
 @media screen and (max-width:768px) {
-  .wrapper {
-    width: 720px;
-    background: red;
+  body {
+    width: 100%;
   }
 
-  .wrapper{
+  /* .wrapper{
     overflow: hidden;
-  }
+  } */
 
   header,
   nav,
@@ -107,9 +110,12 @@ p {
   }
 
   section,
-  aside{
-    width:100%;
+  aside,
+  header,
+  footer,
+  nav{
     clear:both;
+    width:90%;
   }
 
 }
@@ -120,13 +126,12 @@ p {
     position: static;
   }
   .wrapper{
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   body {
-    width: 600px;
-    background: yellow;
-    overflow: hidden;
+    width: 100%;
+    /* overflow: hidden; */
 
   }
 
@@ -138,8 +143,11 @@ p {
     float: none;
   }
   section,
-  aside{
-    width:100%;
+  aside,
+  header,
+  footer,
+  nav{
     clear:both;
+    width:90%;
   }
 }
